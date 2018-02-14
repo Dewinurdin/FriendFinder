@@ -1,10 +1,46 @@
-* {
-	box-sizing: border-box;
 
-}
 .selector-for-some-widget {
   box-sizing: content-box;
 }
+.container-fluid {
+	padding: 30px;
+}
+.jumbotron, .container-fluid {
+	text-align: center;
+}
+.fa {
+	display: inline-block;
+}
+h1 {
+	font-size: 60px;
+}
+h2{
+	font-size: 28px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+h4 {
+	padding: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+h1, h2, h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.questions {
+	padding-bottom: 5px;
+}
+.submit-data {
+	margin-top: 20px;
+	width: 200px;
+}
+
+
 
 
 
