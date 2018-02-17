@@ -22,13 +22,13 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 			<form action="/survey" method="POST" role="form" class="form-horizontal">
 			<div class="form-group">
 			  <label for="name" class="label">Name (Required)</label>
-			  <input type="text" class="form-control" id="name">
+			  <input type="text" class="form-control" id="name" name="name">
 			</div>
 
-			<form action="/survey" method="POST" role="form" class="form-horizontal">
+			
 			<div class="form-group">
 			  <label for="photo" class="label">Photo (Required)</label>
-			  <input type="text" class="form-control" id="photo">
+			  <input type="text" class="form-control" id="photo" name="photo">
 			</div>
 		</div>		
 			  <hr>
@@ -41,7 +41,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 				    Select an option
 				  </button> -->
 				  <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
-					<select class="chosen-single chosen-default dropdown-primary">
+					<select class="chosen-single chosen-default dropdown-primary" name="q1">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -53,7 +53,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 				<!-- </div> -->
 		  <h3>Question 2</h3>
 		  	<p class="questions">I have vivid imagination</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q2">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -63,7 +63,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 3</h3>
 		  	<p class="questions">I worry about things</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q3">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -73,7 +73,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 4</h3>
 		  	<p class="questions">I love large parties</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q4">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -83,7 +83,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 5</h3>
 		  	<p class="questions">I prefer varieties to routines</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q5">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -93,7 +93,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 6</h3>
 		  	<p class="questions">I am always busy</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q6">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -103,7 +103,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 7</h3>
 		  	<p class="questions">I love to solve complex problems</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q7">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -113,7 +113,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 8</h3>
 		  	<p class="questions">I trust others</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q8">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -123,7 +123,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 9</h3>
 		  	<p class="questions">I try to follow the rules</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q9">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -133,7 +133,7 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					</select>
 		  <h3>Question 10</h3>
 		  	<p class="questions">I like music</p>
-				<select class="chosen-single chosen-default dropdown-primary">
+				<select class="chosen-single chosen-default dropdown-primary" name="q10">
 						<option value="" disabled selected>Select an option</option>
 					    <option value="1">1 (Stronlgly agree)</option>
 					    <option value="2">2</option>
@@ -141,8 +141,10 @@ on a scale of 1 to 5 based on how much the user agrees or disagrees with a quest
 					    <option value="4">4</option>
 					    <option value="5">5 (Strongly disagree)</option>
 					</select>
+
 				<br>
-			<button type="button" class="submit-data btn btn-info">Submit</button>
+			<button type="submit" class="submit-data btn btn-info">Submit</button>
+		</form>
 	</div>
 			
 	</div>

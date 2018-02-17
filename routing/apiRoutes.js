@@ -3,6 +3,8 @@
 // res ==> to send data
 //req ==> to receive data
 
+var bodyParser = require('body-parser');
+
 var data = require("./../app/data/friends.json");
 
 var apiRoutes = function(app){
@@ -18,17 +20,25 @@ var apiRoutes = function(app){
 	//This will be used to handle incoming survey results. 
 	//This route will also be used to handle the compatibility logic.
 
-	app.post('/friends', function (req, res) {
-		var thisUser = req.body;
-		var differences = [];
-		//for each answer, compare the answers and add the value of the difference of the total difference
-		for (var i = 0; i < thisUser.answers.length; i++){
-			
-		}
+	app.post('/survey', function (req, res) {
+		// parse application/x-www-form-urlencoded
+		app.use(bodyParser.urlencoded({ extended: false }));		 
+		// parse application/json
+		app.use(bodyParser.json());
 
-	res.send('POST request to the survey')
+		console.log(req.body);
 
-	  console.log(req.body);
+		// format for sending for with dropdown
+
+		// var value = $(".chosen-single").val();
+	
+	//for each answer, compare the answers and add the value of the difference of 
+	//the total difference
+		
+
+	// res.send('POST request to the survey')
+
+	 
 	})
 };
 
